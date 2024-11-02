@@ -331,6 +331,10 @@
           ordering: true, // Mengaktifkan penyortiran
           pageLength: 5, // Menentukan jumlah baris per halaman
           lengthMenu: [5, 10, 20, 50], // Pilihan jumlah baris per halaman
+          dom: 'Bfrtip',
+                buttons: [
+                    'copy', 'csv', 'excel', 'pdf', 'print'
+                ]
         });
       });
 
@@ -347,14 +351,7 @@
             });
         });
 
-        $(document).ready(function() {
-            $('#mauexport').DataTable({
-                dom: 'Bfrtip',
-                buttons: [
-                    'copy', 'csv', 'excel', 'pdf', 'print'
-                ]
-            });
-        });
+
     </script>
 
     <!-- script  -->
